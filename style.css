@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+bod {
+  background-color: white;
+  font-family: sans-serif;
+}
+
+.profile {
+  width: 40%;
+  float: right;
+}
+
+.profile img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border-bottom: 5px solid gray;
+}
+
+.about {
+  margin-left: 15px;
+}
+
+.profile-info {
+  width: 60%;
+  height: 100vh;
+  float: left;
+  padding: 0 30px;
+  overflow: scroll;
+  overflow-x: hidden; /* لاخفاء شريط السكرول السفلي  */
+}
+
+.profile-info::-webkit-scrollbar {
+  width: 0; /*  هاي عشان نخفي السكرول بار , لكن يضل تأثيره موجود */
+}
+
+.profile-info h1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.social {
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.social img {
+  width: 25px;
+  margin-right: 15px;
+  cursor: pointer;
+  transition: 2s;
+}
+
+.social img:hover {
+  transform: rotate(360deg);
+}
+
+.profile-info h2 {
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+.services {
+  display: inline-block;
+  width: 28%;
+  padding: 30px 10px;
+  margin: 2%;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(37, 73, 214, 0.18);
+  overflow: scroll;
+  overflow-y: hidden;
+}
+
+.services::-webkit-scrollbar {
+  height: 0;
+}
+
+.services img {
+  width: 60%;
+  margin: 5px;
+}
+
+.services small {
+  padding-top: 15px;
+}
+
+.projects {
+  display: block;
+}
+
+.projects img {
+  width: 31%;
+  border: 1px solid gray;
+  padding: 4px;
+  margin-bottom: 5px;
+  margin-left: 3px;
+  cursor: pointer;
+}
+
+.form-box {
+  margin-top: 30px;
+}
+
+.input-group input {
+  width: 45%;
+  border: none;
+  outline: none !important; /* هاي عشان لما نكبس ع المربع تبع الانبوت , ما يعطينا مربع اصفر او اسود  */
+  background-color: rgb(177, 195, 211);
+  margin: 2%;
+  display: inline-block;
+}
+
+.text-area textarea {
+  width: 95%;
+  border: 0;
+  outline: none !important;
+  padding: 10px;
+  background-color: rgb(177, 195, 211);
+  margin: 2%;
+}
+
+.sub {
+  border: 0;
+  outline: none !important;
+  padding: 10px;
+  background-color: blueviolet;
+  margin: 2%;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.cont {
+  margin: 5% 0 5% 0;
+  width: 65%;
+}
+
+.cont img {
+  width: 20px;
+  margin: -5px 10px;
+}
+
+.cont span {
+  margin: 3%;
+}
+
+.copy {
+  text-align: center;
+  margin-bottom: 30px;
+  color: gray;
+}
+
+@media only screen and (max-width: 900px) {
+  .profile {
+    width: 95%;
+  }
+  .profile-info {
+    width: 100%;
+  }
+  .profile img {
+    width: 90%;
+  }
+
+  .services {
+    margin-top: 10px;
+    width: 95%;
+  }
+  .cont span {
+    font-size: 10px;
+  }
+  .cont img {
+    width: 10px;
+  }
+  .social {
+    margin-left: 36%;
+  }
+}
